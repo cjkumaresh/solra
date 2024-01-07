@@ -1,0 +1,17 @@
+{
+  "name": "self-trader",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "unnaipoloruvan"
+  },
+  "scripts": {
+    "build": "rm -rf nifty-options.js && tsc nifty-options.ts tsconfig.json"
+  },
+  "dependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
