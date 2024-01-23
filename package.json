@@ -6,7 +6,7 @@
     "name": "unnaipoloruvan"
   },
   "scripts": {
-    "build": "rm -rf nifty-options.js && tsc nifty-options.ts tsconfig.json"
+    "build": "rm -rf nifty-options.js && webpack"
   },
   "dependencies": {
     "ts-loader": "^9.5.1",
