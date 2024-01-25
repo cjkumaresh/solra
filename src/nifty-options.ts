@@ -15,7 +15,9 @@ export const solluda = function (updateFrequencyinMS: number, cookie) {
     };
     const request = new Request(config.url, options);
 
-    fetch(request).then((response) => response.json())
+    fetch(request).then((response) => { 
+      // console.log(response);
+       return response.json() })
     .then((response: any) => {
       process(response.filtered, pcrs);
     });

@@ -1,5 +1,6 @@
 import { Signal } from "./model";
-
+// const notifier = require("node-notifier");
+// import notifier from 'node-notifier';
 export function analyse(
   current: number,
   previous: number,
@@ -55,7 +56,10 @@ function signal(currentRatio, pcrs): Signal {
 
 function broadcast(signal: Signal, strength) {
   if (signal !== Signal.choppy) {
-    new Notification(strength + " " + signal);
+    console.info({
+      title: "Change alert",
+      message: strength + ' ' +signal
+    })
   } else {
     console.log(strength + " " + signal);
   }

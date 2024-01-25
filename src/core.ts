@@ -36,7 +36,11 @@ export function compare(pcrs) {
 
   if (previousPCR?.ratio) {
     analyse(currentPCR.ratio, previousPCR.ratio, "strong", pcrs);
+  }
+  if (previousPCRMinusOne?.ratio) {
     analyse(currentPCR.ratio, previousPCRMinusOne.ratio, "strong", pcrs);
+  }
+  if (previousPCRMinusTwo?.ratio) {
     analyse(
       currentPCR.ratio,
       previousPCRMinusTwo.ratio,

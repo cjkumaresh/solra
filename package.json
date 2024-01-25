@@ -6,9 +6,11 @@
     "name": "unnaipoloruvan"
   },
   "scripts": {
-    "build": "rm -rf nifty-options.js && webpack"
+    "build": "rm -rf nifty-options.js && webpack",
+    "start": "node dist/bundle.js"
   },
   "dependencies": {
+    "node-notifier": "^10.0.1",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "webpack": "^5.89.0",
